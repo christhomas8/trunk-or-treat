@@ -1,0 +1,105 @@
+body,html {
+	background-color:#ee9e53;
+	color:#080808;
+}
+
+.glow {
+    font-size: 60px;
+    color: rgb(85, 9, 9);
+    text-align: center;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+    }
+}
+
+.uniDiv {
+    text-align: center;
+    background-color: white; /*gray;*/
+    margin:0px 10px 20px 15px;
+    padding:2px;
+    border: solid black 2px;/**/
+}
+
+.uniDivMid {
+    text-align: center;
+    background-color: black;
+    margin:0px 10px 20px 15px;
+    padding:2px;
+}
+
+.button {
+	width:60%;
+	padding: 15px 15px;
+	font-size: 22px;
+	text-align: center;
+	cursor: pointer;
+	outline: none;
+	color: white;/*#000080;*/
+	background-color: #ee9e53;
+	border: none;
+	border-radius: 15px;
+	box-shadow: 0 9px #312519;
+	margin-bottom:15px;
+	margin-top:15px;
+}
+
+.button:hover {
+	background-color: lightgray;
+	color: #08080a;
+}
+
+.button:active {
+	background-color: lightgray;
+	box-shadow: 0 5px black;
+	transform: translateY(4px);
+}
+
+.respimg {
+	cursor: pointer;
+	height:50%;
+	width:50%;
+	background-color:lightgray;
+	animation-name: flicker;
+	animation-duration: 8s;
+	animation-iteration-count: infinite;
+}
+
+.respimg img {
+    max-width: 640px;
+}
+
+@media screen and (max-width: 800px) {
+	.respimg {
+		width:100%;
+		height:50%;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.respimg {
+		width:100%;
+		height:50%;
+	}
+
+    .glow {
+        font-size: 48px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+	.respimg {
+		width:100%;
+		height:50%;
+	}
+}
