@@ -79,6 +79,8 @@ body,html {
     max-width: 640px;
 }
 
+
+/*Adjust Screen*/
 @media screen and (max-width: 800px) {
 	.respimg {
 		width:100%;
